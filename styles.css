@@ -35,7 +35,7 @@ a { color: inherit; }
 .wordmark-course { padding-left: 12px; border-left: 1px solid #c4d0d7; color: var(--navy); font-size: 14px; font-weight: 600; letter-spacing: .01em; }
 .wordmark-mark { width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid var(--navy); border-radius: 50%; font-family: var(--serif); font-size: 18px; font-weight: 500; }
 nav { display: flex; align-items: center; gap: 34px; }
-.nav-link { text-decoration: none; color: #5e6d7e; font-size: 12px; transition: color .2s ease; }
+.nav-link { text-decoration: none; color: #5e6d7e; font-size: 14px; transition: color .2s ease; }
 .nav-link:hover, .nav-link:focus-visible { color: var(--navy); }
 .course-pill { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border: 1px solid #cdd7dc; border-radius: 99px; color: var(--navy); font-size: 11px; font-weight: 600; text-decoration: none; }
 .status-dot { width: 6px; height: 6px; border-radius: 50%; background: #779bb7; }
@@ -101,7 +101,7 @@ h1 span { display: block; color: #718fa9; }
   .wordmark-course { padding-left: 8px; font-size: 10px; }
   .wordmark-mark { display: none; }
   nav { gap: 18px; }
-  .nav-link { font-size: 11px; }
+  .nav-link { font-size: 13px; }
   .course-pill { padding: 8px 10px; font-size: 10px; }
   .hero { min-height: auto; padding: 66px 8% 64px; grid-template-columns: 1fr; }
   .hero-copy { padding: 0; }
@@ -130,7 +130,7 @@ h1 span { display: block; color: #718fa9; }
 @media (max-width: 390px) {
   .site-header { padding: 10px 5%; }
   nav { gap: 12px; }
-  .nav-link { font-size: 10px; }
+  .nav-link { font-size: 12px; }
   .hero-bottom { letter-spacing: .1em; gap: 8px; }
   .bottom-rule { width: 24px; }
 }
