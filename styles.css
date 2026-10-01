@@ -31,7 +31,8 @@ a { color: inherit; }
   justify-content: space-between;
   border-bottom: 1px solid rgba(20, 43, 73, .09);
 }
-.wordmark { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-size: 13px; font-weight: 600; letter-spacing: .01em; }
+.wordmark { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-size: 11px; font-weight: 600; letter-spacing: .01em; }
+.wordmark-course { padding-left: 12px; border-left: 1px solid #c4d0d7; color: #718093; font-size: 9px; font-weight: 400; letter-spacing: .02em; }
 .wordmark-mark { width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid var(--navy); border-radius: 50%; font-family: var(--serif); font-size: 18px; font-weight: 500; }
 nav { display: flex; align-items: center; gap: 34px; }
 .nav-link { text-decoration: none; color: #5e6d7e; font-size: 12px; transition: color .2s ease; }
@@ -40,7 +41,7 @@ nav { display: flex; align-items: center; gap: 34px; }
 .status-dot { width: 6px; height: 6px; border-radius: 50%; background: #779bb7; }
 .hero { position: relative; min-height: 580px; padding: 88px 12.2% 73px; display: grid; grid-template-columns: 1.15fr .85fr; align-items: center; overflow: hidden; }
 .hero-copy { position: relative; z-index: 1; padding-bottom: 12px; }
-.eyebrow, .course-number, .section-kicker, .hero-bottom, .art-caption, .art-index, .about-aside, .site-footer { text-transform: uppercase; letter-spacing: .15em; }
+.eyebrow, .course-number, .section-kicker, .hero-bottom, .site-footer { text-transform: uppercase; letter-spacing: .15em; }
 .eyebrow { margin: 0 0 24px; display: flex; align-items: center; gap: 11px; color: #718093; font-size: 9px; font-weight: 600; }
 .eyebrow-line { width: 25px; height: 1px; background: var(--blue); }
 h1 { max-width: 570px; margin: 0; font-family: var(--serif); font-size: clamp(48px, 6vw, 76px); font-weight: 500; letter-spacing: -.045em; line-height: 1.06; }
@@ -48,7 +49,7 @@ h1 span { display: block; color: #718fa9; }
 .course-heading { margin-top: 35px; padding-left: 16px; border-left: 1px solid #9eb3c2; }
 .course-number { margin: 0 0 9px; color: #678199; font-size: 9px; font-weight: 700; }
 .course-number span { padding: 0 5px; color: #a2b1bc; }
-.course-heading h2 { margin: 0; font-size: clamp(15px, 1.5vw, 18px); line-height: 1.55; font-weight: 400; letter-spacing: .005em; }
+.course-heading h2 { margin: 0; font-size: clamp(20px, 2vw, 24px); line-height: 1.45; font-weight: 400; letter-spacing: .005em; }
 .discover-link { display: inline-flex; align-items: center; gap: 17px; margin-top: 35px; padding-bottom: 7px; border-bottom: 1px solid #9cb0bd; text-decoration: none; font-size: 11px; font-weight: 600; }
 .discover-link span { color: #7292ac; font-size: 16px; transition: transform .2s ease; }
 .discover-link:hover span { transform: translateY(3px); }
@@ -65,10 +66,6 @@ h1 span { display: block; color: #718fa9; }
 .spark-one { top: 64px; left: 27%; }
 .spark-two { top: 107px; right: 12%; width: 7px; height: 7px; background: #bacdd5; }
 .spark-three { right: 21%; bottom: 35px; width: 6px; height: 6px; background: var(--navy); }
-.art-caption, .art-index { position: absolute; color: #7d8d9b; font-size: 7px; font-weight: 600; }
-.art-caption { top: 12px; right: 4px; }
-.art-index { bottom: 5px; left: 0; display: flex; align-items: center; gap: 7px; }
-.art-index i { width: 36px; height: 1px; background: #9fb2bf; }
 .hero-bottom { position: absolute; right: 12.2%; bottom: 34px; left: 12.2%; display: flex; align-items: center; gap: 15px; color: #8895a0; font-size: 7px; font-weight: 600; }
 .bottom-rule { width: 45px; height: 1px; background: #c4cecf; }
 .about-section { padding: 66px 12.2% 82px; background: var(--paper); border-top: 1px solid rgba(20, 43, 73, .07); }
@@ -81,8 +78,6 @@ h1 span { display: block; color: #718fa9; }
 .about-text { max-width: 420px; }
 .intro { margin: 0 0 10px; font-size: 16px; line-height: 1.6; font-weight: 500; }
 .about-note { margin: 0; color: var(--ink-soft); font-size: 12px; line-height: 1.8; }
-.about-aside { display: grid; justify-items: center; gap: 8px; color: #8293a1; font-size: 7px; line-height: 1.7; text-align: center; }
-.aside-star { color: #86a5b9; font-size: 21px; }
 .site-footer { min-height: 72px; padding: 18px 7.1%; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: #82909c; font-size: 7px; font-weight: 600; }
 .site-footer a { color: var(--navy); text-decoration: none; white-space: nowrap; }
 .projects-section { padding: 66px 12.2% 82px; background: #edf2f3; border-top: 1px solid rgba(20, 43, 73, .07); }
@@ -99,6 +94,10 @@ h1 span { display: block; color: #718fa9; }
 .github-profile-link:hover span { transform: translate(2px, -2px); }
 
 @media (min-width: 1440px) { .hero { min-height: 650px; } }
+@media (max-width: 600px) {
+  .site-header { height: auto; min-height: 72px; padding: 12px 6%; flex-wrap: wrap; gap: 12px; }
+  .site-header nav { width: 100%; justify-content: flex-end; }
+}
 @media (max-width: 760px) {
   .site-header { height: 72px; padding: 0 6%; }
   .wordmark { gap: 9px; font-size: 11px; }
@@ -111,7 +110,7 @@ h1 span { display: block; color: #718fa9; }
   .eyebrow { margin-bottom: 20px; }
   h1 { font-size: clamp(49px, 12vw, 70px); }
   .course-heading { margin-top: 26px; }
-  .course-heading h2 { font-size: 15px; }
+  .course-heading h2 { font-size: 18px; }
   .hero-art { height: 290px; width: min(100%, 350px); justify-self: center; margin: 15px auto 0; }
   .art-glow { width: 225px; height: 225px; }
   .orbit-one { width: 165px; height: 165px; }
@@ -126,14 +125,14 @@ h1 span { display: block; color: #718fa9; }
   .projects-content { grid-template-columns: 1fr; gap: 22px; margin-top: 24px; }
   .project-card { padding: 18px; gap: 13px; }
   .project-card h3 { font-size: 12px; }
-  .about-aside { display: none; }
   .about-text { max-width: 480px; }
   .site-footer { padding: 20px 6%; flex-wrap: wrap; font-size: 6px; }
   .footer-center { display: none; }
 }
 @media (max-width: 390px) {
-  .site-header { padding: 0 5%; }
+  .site-header { padding: 10px 5%; }
   .wordmark { font-size: 10px; }
+  .wordmark-course { padding-left: 8px; font-size: 8px; }
   nav { gap: 12px; }
   .nav-link { font-size: 10px; }
   .hero-bottom { letter-spacing: .1em; gap: 8px; }
