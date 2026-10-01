@@ -31,8 +31,8 @@ a { color: inherit; }
   justify-content: space-between;
   border-bottom: 1px solid rgba(20, 43, 73, .09);
 }
-.wordmark { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-size: 11px; font-weight: 600; letter-spacing: .01em; }
-.wordmark-course { padding-left: 12px; border-left: 1px solid #c4d0d7; color: #718093; font-size: 9px; font-weight: 400; letter-spacing: .02em; }
+.wordmark { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: .01em; }
+.wordmark-course { padding-left: 12px; border-left: 1px solid #c4d0d7; color: var(--navy); font-size: 14px; font-weight: 600; letter-spacing: .01em; }
 .wordmark-mark { width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid var(--navy); border-radius: 50%; font-family: var(--serif); font-size: 18px; font-weight: 500; }
 nav { display: flex; align-items: center; gap: 34px; }
 .nav-link { text-decoration: none; color: #5e6d7e; font-size: 12px; transition: color .2s ease; }
@@ -94,14 +94,12 @@ h1 span { display: block; color: #718fa9; }
 .github-profile-link:hover span { transform: translate(2px, -2px); }
 
 @media (min-width: 1440px) { .hero { min-height: 650px; } }
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .site-header { height: auto; min-height: 72px; padding: 12px 6%; flex-wrap: wrap; gap: 12px; }
   .site-header nav { width: 100%; justify-content: flex-end; }
-}
-@media (max-width: 760px) {
-  .site-header { height: 72px; padding: 0 6%; }
-  .wordmark { gap: 9px; font-size: 11px; }
-  .wordmark-mark { width: 27px; height: 27px; }
+  .wordmark { gap: 8px; font-size: 11px; }
+  .wordmark-course { padding-left: 8px; font-size: 10px; }
+  .wordmark-mark { display: none; }
   nav { gap: 18px; }
   .nav-link { font-size: 11px; }
   .course-pill { padding: 8px 10px; font-size: 10px; }
@@ -131,8 +129,6 @@ h1 span { display: block; color: #718fa9; }
 }
 @media (max-width: 390px) {
   .site-header { padding: 10px 5%; }
-  .wordmark { font-size: 10px; }
-  .wordmark-course { padding-left: 8px; font-size: 8px; }
   nav { gap: 12px; }
   .nav-link { font-size: 10px; }
   .hero-bottom { letter-spacing: .1em; gap: 8px; }
