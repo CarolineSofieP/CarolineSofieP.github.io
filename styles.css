@@ -89,6 +89,10 @@ h1 span { display: block; color: #718fa9; }
 .project-card h3 { flex: 1; margin: 0; font-size: 13px; line-height: 1.5; font-weight: 500; }
 .project-card h3 span { color: #728294; font-weight: 400; }
 .github-profile-link { justify-self: start; }
+@media (min-width: 761px) {
+  .projects-content { align-items: start; }
+  .projects-items { margin-top: -20px; }
+}
 
 @media (min-width: 1440px) { .hero { min-height: 650px; } }
 @media (max-width: 760px) {
